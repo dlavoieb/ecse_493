@@ -11,13 +11,17 @@ C = [1, 0, 0, 0; 0, 1, 0, 0];
 D = [0; 0];
 
 P = [-1+1i, -1-1i, -50, -100];
+% P = [-1.28 + .924i, -1.28-.924i, -40.4, -66.4];
+
 K = acker(A, B, P);
 
-fig = figure;
+fig = figure(1);
 pzmap(A, B, C, D)
+title('Open-Loop Pole-Zero Map');
 saveas(fig, 'open_loop_poles.eps', 'epsc')
 
 
-fig = figure;
+fig = figure(3);
 pzmap(A-B*K, [0;0;0;0] , C, D)
+title('Placed Pole-Zero Map');
 saveas(fig, 'placed_poles.eps', 'epsc')
