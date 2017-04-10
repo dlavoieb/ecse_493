@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.8"
+    ComputedModelVersion    "1.11"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -27,11 +27,11 @@ Model {
   Creator		  "dlavoi14"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "dlavoi14"
+  LastModifiedBy	  "jmacne5"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Apr 05 18:14:17 2017"
-  RTWModifiedTimeStamp	  413314184
-  ModelVersionFormat	  "1.%<AutoIncrement:8>"
+  LastModifiedDate	  "Mon Apr 10 16:59:25 2017"
+  RTWModifiedTimeStamp	  413725165
+  ModelVersionFormat	  "1.%<AutoIncrement:11>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -69,6 +69,7 @@ Model {
     $ObjectID		    1
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "poleplacement_2"
+    signals_		    []
     overrideMode_	    [0.0]
     Array {
       Type		      "Cell"
@@ -995,7 +996,7 @@ Model {
   }
   System {
     Name		    "poleplacement_2"
-    Location		    [10, 82, 830, 964]
+    Location		    [2, 74, 1678, 989]
     Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -1009,13 +1010,13 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "66"
+    SIDHighWatermark	    "75"
     Block {
       BlockType		      Sum
       Name		      "Add"
       SID		      "55"
       Ports		      [4, 1]
-      Position		      [320, 286, 350, 379]
+      Position		      [320, 236, 350, 329]
       ZOrder		      -2
       BlockMirror	      on
       Inputs		      "++++"
@@ -1038,7 +1039,7 @@ Model {
       BlockType		      Gain
       Name		      "Ang"
       SID		      "52"
-      Position		      [435, 335, 465, 365]
+      Position		      [435, 290, 465, 320]
       ZOrder		      -8
       BlockMirror	      on
       Gain		      "k_2"
@@ -1050,7 +1051,7 @@ Model {
       BlockType		      Gain
       Name		      "Ang_Vel"
       SID		      "54"
-      Position		      [435, 440, 465, 470]
+      Position		      [435, 370, 465, 400]
       ZOrder		      -8
       BlockMirror	      on
       Gain		      "k_4"
@@ -1261,7 +1262,7 @@ Model {
       Name		      "Differentiation&Calibration"
       SID		      "16"
       Ports		      [2, 5]
-      Position		      [650, 275, 770, 355]
+      Position		      [650, 230, 770, 310]
       ZOrder		      -21
       BlockMirror	      on
       MinAlgLoopOccurrences   off
@@ -1274,7 +1275,7 @@ Model {
       System {
 	Name			"Differentiation&Calibration"
 	Location		[2, 82, 1662, 997]
-	Open			on
+	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -1535,94 +1536,16 @@ Model {
       }
     }
     Block {
-      BlockType		      Display
-      Name		      "Display"
-      SID		      "27"
-      Ports		      [1]
-      Position		      [560, 15, 650, 45]
-      ZOrder		      4
-      Decimation	      "1"
-      Lockdown		      off
-    }
-    Block {
-      BlockType		      Display
-      Name		      "Display1"
-      SID		      "28"
-      Ports		      [1]
-      Position		      [670, 170, 755, 250]
-      ZOrder		      11
-      Decimation	      "1"
-      Lockdown		      off
-    }
-    Block {
-      BlockType		      Display
-      Name		      "Display2"
-      SID		      "29"
-      Ports		      [1]
-      Position		      [885, 80, 975, 110]
-      ZOrder		      4
-      Decimation	      "1"
-      Lockdown		      off
-    }
-    Block {
-      BlockType		      Display
-      Name		      "Display3"
-      SID		      "30"
-      Ports		      [1]
-      Position		      [885, 130, 975, 160]
-      ZOrder		      4
-      Decimation	      "1"
-      Lockdown		      off
-    }
-    Block {
-      BlockType		      Display
-      Name		      "Display4"
-      SID		      "31"
-      Ports		      [1]
-      Position		      [340, 25, 430, 55]
-      ZOrder		      4
-      Decimation	      "1"
-      Lockdown		      off
-    }
-    Block {
-      BlockType		      Display
-      Name		      "Display5"
-      SID		      "62"
-      Ports		      [1]
-      Position		      [405, 495, 495, 525]
-      ZOrder		      4
-      Decimation	      "1"
-      Lockdown		      off
-    }
-    Block {
-      BlockType		      Display
-      Name		      "Display6"
-      SID		      "63"
-      Ports		      [1]
-      Position		      [405, 545, 495, 575]
-      ZOrder		      4
-      Decimation	      "1"
-      Lockdown		      off
-    }
-    Block {
-      BlockType		      Display
-      Name		      "Display7"
-      SID		      "64"
-      Ports		      [1]
-      Position		      [405, 595, 495, 625]
-      ZOrder		      4
-      Decimation	      "1"
-      Lockdown		      off
-    }
-    Block {
-      BlockType		      Display
-      Name		      "Display8"
-      SID		      "65"
-      Ports		      [1]
-      Position		      [405, 650, 495, 680]
-      ZOrder		      4
-      Decimation	      "1"
-      Lockdown		      off
+      BlockType		      Gain
+      Name		      "Gain"
+      SID		      "69"
+      Position		      [825, 275, 855, 305]
+      ZOrder		      -8
+      BlockMirror	      on
+      Gain		      "-1"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
     }
     Block {
       BlockType		      Gain
@@ -1639,7 +1562,7 @@ Model {
       Name		      "HIL Initialize"
       SID		      "32"
       Ports		      []
-      Position		      [15, 39, 99, 114]
+      Position		      [30, 59, 114, 134]
       Priority		      "-99"
       AttributesFormatString  "%<object_name> (%<board_type>-%<board_number>)"
       LibraryVersion	      "1.1471"
@@ -1765,10 +1688,19 @@ Model {
       vector_input	      off
     }
     Block {
+      BlockType		      Constant
+      Name		      "Offset"
+      SID		      "71"
+      Position		      [685, 185, 715, 215]
+      ZOrder		      3
+      BlockMirror	      on
+      Value		      "-0.15"
+    }
+    Block {
       BlockType		      Gain
       Name		      "Pos"
       SID		      "51"
-      Position		      [435, 280, 465, 310]
+      Position		      [420, 230, 465, 260]
       ZOrder		      -8
       BlockMirror	      on
       Gain		      "k_1"
@@ -1779,20 +1711,17 @@ Model {
     Block {
       BlockType		      Scope
       Name		      "Scope"
-      SID		      "66"
-      Ports		      [4]
-      Position		      [590, 507, 645, 673]
+      SID		      "74"
+      Ports		      [1]
+      Position		      [640, 459, 670, 491]
       ZOrder		      -16
       Floating		      off
-      Location		      [849, 56, 1673, 1001]
+      Location		      [9, 56, 833, 1001]
       Open		      on
-      NumInputPorts	      "4"
+      NumInputPorts	      "1"
       List {
 	ListType		AxesTitles
 	axes1			"%<SignalLabel>"
-	axes2			"%<SignalLabel>"
-	axes3			"%<SignalLabel>"
-	axes4			"%<SignalLabel>"
       }
       List {
 	ListType		ScopeGraphics
@@ -1804,8 +1733,40 @@ Model {
 	LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
 	MarkerStyles		"none|none|none|none|none|none"
       }
-      YMin		      "-5~-80~-22.5~-80"
-      YMax		      "6~90~22.5~60"
+      YMin		      "0.0475"
+      YMax		      "0.075"
+      SaveName		      "ScopeData1"
+      DataFormat	      "StructureWithTime"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope1"
+      SID		      "75"
+      Ports		      [1]
+      Position		      [640, 519, 670, 551]
+      ZOrder		      -16
+      Floating		      off
+      Location		      [418, 452, 1242, 868]
+      Open		      on
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		ScopeGraphics
+	FigureColor		"[0.5 0.5 0.5]"
+	AxesColor		"[0 0 0]"
+	AxesTickColor		"[1 1 1]"
+	LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	LineStyles		"-|-|-|-|-|-"
+	LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
+	MarkerStyles		"none|none|none|none|none|none"
+      }
+      YMin		      "0.013"
+      YMax		      "0.028"
+      SaveName		      "ScopeData2"
       DataFormat	      "StructureWithTime"
       SampleTime	      "0"
     }
@@ -1813,7 +1774,7 @@ Model {
       BlockType		      Gain
       Name		      "Vel"
       SID		      "53"
-      Position		      [435, 385, 465, 415]
+      Position		      [435, 330, 465, 360]
       ZOrder		      -8
       BlockMirror	      on
       Gain		      "k_3"
@@ -1823,214 +1784,128 @@ Model {
     }
     Block {
       BlockType		      Constant
-      Name		      "Xd"
-      SID		      "15"
-      Position		      [575, 255, 605, 285]
+      Name		      "Xd1"
+      SID		      "59"
+      Position		      [805, 185, 835, 215]
       ZOrder		      3
       BlockMirror	      on
-      Value		      "0"
+      Value		      "410"
     }
     Block {
       BlockType		      Constant
-      Name		      "Xd1"
-      SID		      "59"
-      Position		      [805, 170, 835, 200]
+      Name		      "Xd2"
+      SID		      "68"
+      Position		      [590, 185, 620, 215]
       ZOrder		      3
       BlockMirror	      on
       Value		      "0"
     }
     Block {
       BlockType		      Sum
-      Name		      "e"
-      SID		      "57"
-      Ports		      [2, 1]
-      Position		      [520, 262, 550, 293]
+      Name		      "e1"
+      SID		      "67"
+      Ports		      [3, 1]
+      Position		      [535, 229, 565, 261]
       ZOrder		      -2
       BlockMirror	      on
-      Inputs		      "+-"
+      Inputs		      "-++"
       InputSameDT	      off
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
       SaturateOnIntegerOverflow	off
     }
+    Block {
+      BlockType		      Scope
+      Name		      "Floating\nScope"
+      SID		      "73"
+      Ports		      []
+      Position		      [185, 14, 215, 46]
+      IOType		      "viewer"
+      Floating		      on
+      Location		      [376, 294, 700, 533]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		ScopeGraphics
+	FigureColor		"[0.5 0.5 0.5]"
+	AxesColor		"[0 0 0]"
+	AxesTickColor		"[1 1 1]"
+	LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	LineStyles		"-|-|-|-|-|-"
+	LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
+	MarkerStyles		"none|none|none|none|none|none"
+      }
+      DataFormat	      "StructureWithTime"
+      SampleTime	      "0"
+    }
     Line {
       SrcBlock		      "CheckMaxAngle"
       SrcPort		      1
-      Points		      [35, 0]
-      Branch {
-	Points			[0, -80]
-	DstBlock		"Display"
-	DstPort			1
-      }
-      Branch {
-	DstBlock		"HIL Write Analog"
-	DstPort			1
-      }
+      DstBlock		      "HIL Write Analog"
+      DstPort		      1
     }
     Line {
       SrcBlock		      "HIL Read Encoder"
       SrcPort		      1
-      Points		      [100, 0]
-      Branch {
-	Points			[0, 240]
-	DstBlock		"Differentiation&Calibration"
-	DstPort			2
-      }
-      Branch {
-	DstBlock		"Display2"
-	DstPort			1
-      }
-    }
-    Line {
-      Labels		      [0, 0]
-      SrcBlock		      "Differentiation&Calibration"
-      SrcPort		      3
-      Points		      [-15, 0]
-      Branch {
-	Points			[-145, 0; 0, 35]
-	DstBlock		"Ang"
-	DstPort			1
-      }
-      Branch {
-	Points			[0, -145; -270, 0]
-	DstBlock		"CheckMaxAngle"
-	DstPort			2
-      }
+      Points		      [110, 0]
+      DstBlock		      "Gain"
+      DstPort		      1
     }
     Line {
       SrcBlock		      "Differentiation&Calibration"
       SrcPort		      4
-      Points		      [-150, 0; 0, 70]
+      Points		      [-150, 0; 0, 60]
       DstBlock		      "Vel"
       DstPort		      1
     }
     Line {
       SrcBlock		      "Differentiation&Calibration"
       SrcPort		      5
-      Points		      [-135, 0; 0, 110]
+      Points		      [-135, 0; 0, 85]
       DstBlock		      "Ang_Vel"
       DstPort		      1
     }
     Line {
       SrcBlock		      "Pos"
       SrcPort		      1
-      Points		      [-35, 0]
-      Branch {
-	DstBlock		"Add"
-	DstPort			1
-      }
-      Branch {
-	Points			[-5, 0; 0, 215]
-	Branch {
-	  DstBlock		  "Display5"
-	  DstPort		  1
-	}
-	Branch {
-	  Points		  [0, 20]
-	  DstBlock		  "Scope"
-	  DstPort		  1
-	}
-      }
+      DstBlock		      "Add"
+      DstPort		      1
     }
     Line {
       SrcBlock		      "Ang"
       SrcPort		      1
-      Points		      [0, -30; -50, 0]
-      Branch {
-	DstBlock		"Add"
-	DstPort			2
-      }
-      Branch {
-	Points			[0, 240; 5, 0]
-	Branch {
-	  DstBlock		  "Display6"
-	  DstPort		  1
-	}
-	Branch {
-	  Points		  [0, 10]
-	  DstBlock		  "Scope"
-	  DstPort		  2
-	}
-      }
+      Points		      [0, -35]
+      DstBlock		      "Add"
+      DstPort		      2
     }
     Line {
       SrcBlock		      "Vel"
       SrcPort		      1
-      Points		      [-20, 0; 0, -55; -35, 0]
-      Branch {
-	DstBlock		"Add"
-	DstPort			3
-      }
-      Branch {
-	Points			[0, 265]
-	Branch {
-	  DstBlock		  "Display7"
-	  DstPort		  1
-	}
-	Branch {
-	  DstBlock		  "Scope"
-	  DstPort		  3
-	}
-      }
+      Points		      [-20, 0; 0, -50]
+      DstBlock		      "Add"
+      DstPort		      3
     }
     Line {
       SrcBlock		      "Ang_Vel"
       SrcPort		      1
       Points		      [-65, 0]
-      Branch {
-	DstBlock		"Add"
-	DstPort			4
-      }
-      Branch {
-	Points			[0, 210; 10, 0]
-	Branch {
-	  DstBlock		  "Display8"
-	  DstPort		  1
-	}
-	Branch {
-	  Points		  [0, -15]
-	  DstBlock		  "Scope"
-	  DstPort		  4
-	}
-      }
+      DstBlock		      "Add"
+      DstPort		      4
     }
     Line {
       SrcBlock		      "Add"
       SrcPort		      1
-      Points		      [-80, 0; 0, -240]
+      Points		      [-80, 0; 0, -190]
       DstBlock		      "Gain4"
       DstPort		      1
     }
     Line {
       SrcBlock		      "Gain4"
       SrcPort		      1
-      Points		      [30, 0]
-      Branch {
-	DstBlock		"Display4"
-	DstPort			1
-      }
-      Branch {
-	DstBlock		"CheckMaxAngle"
-	DstPort			1
-      }
-    }
-    Line {
-      SrcBlock		      "Differentiation&Calibration"
-      SrcPort		      2
-      Points		      [-80, 0]
-      DstBlock		      "e"
-      DstPort		      2
-    }
-    Line {
-      SrcBlock		      "e"
-      SrcPort		      1
-      Points		      [0, 15]
-      DstBlock		      "Pos"
-      DstPort		      1
-    }
-    Line {
-      SrcBlock		      "Xd"
-      SrcPort		      1
-      DstBlock		      "e"
+      DstBlock		      "CheckMaxAngle"
       DstPort		      1
     }
     Line {
@@ -2040,33 +1915,80 @@ Model {
       DstPort		      1
     }
     Line {
-      SrcBlock		      "Xd1"
+      SrcBlock		      "e1"
       SrcPort		      1
-      Points		      [-20, 0; 0, -45]
-      DstBlock		      "Add1"
-      DstPort		      2
+      DstBlock		      "Pos"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Xd2"
+      SrcPort		      1
+      Points		      [-5, 0]
+      DstBlock		      "e1"
+      DstPort		      1
+    }
+    Line {
+      Labels		      [0, 0]
+      SrcBlock		      "Differentiation&Calibration"
+      SrcPort		      3
+      Points		      [-35, 0]
+      Branch {
+	Points			[-130, 0]
+	Branch {
+	  Points		  [0, -85; -120, 0]
+	  DstBlock		  "CheckMaxAngle"
+	  DstPort		  2
+	}
+	Branch {
+	  DstBlock		  "Ang"
+	  DstPort		  1
+	}
+      }
+      Branch {
+	Points			[0, 265]
+	DstBlock		"Scope1"
+	DstPort			1
+      }
     }
     Line {
       SrcBlock		      "Add1"
       SrcPort		      1
-      Points		      [10, 0]
+      Points		      [10, 0; 0, 115]
+      DstBlock		      "Differentiation&Calibration"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Xd1"
+      SrcPort		      1
+      Points		      [-20, 0; 0, -60]
+      DstBlock		      "Add1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Gain"
+      SrcPort		      1
+      DstBlock		      "Differentiation&Calibration"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Differentiation&Calibration"
+      SrcPort		      2
+      Points		      [-20, 0]
       Branch {
-	Points			[20, 0]
-	DstBlock		"Display3"
-	DstPort			1
+	DstBlock		"e1"
+	DstPort			3
       }
       Branch {
-	Points			[0, 160]
-	DstBlock		"Differentiation&Calibration"
+	DstBlock		"Scope"
 	DstPort			1
       }
     }
     Line {
-      SrcBlock		      "Differentiation&Calibration"
+      SrcBlock		      "Offset"
       SrcPort		      1
-      Points		      [-10, 0; 0, -75]
-      DstBlock		      "Display1"
-      DstPort		      1
+      Points		      [-55, 0; 0, 45]
+      DstBlock		      "e1"
+      DstPort		      2
     }
   }
 }
@@ -2078,7 +2000,7 @@ MatData {
     "-T7VYA;64       X    8 0  !@    @    \"          4    (     0    $    !          4 !  -     0   \"<   !O;&1?;F%M90"
     "      :7-?9&5L971E9    &]B:F5C=%]B;&]C:P  #@   #@    &    \"     0         !0    @    !    !0    $         $     4"
     "   !(24PM,0    X    P    !@    @    ) @        4    (     0    $    !          (  0      #@   #@    &    \"     8 "
-    "        !0    @    !     0    $         \"0    @         \"(!H0 "
+    "        !0    @    !     0    $         \"0    @         \"N!H0 "
   }
   DataRecord {
     Tag			    DataTag1
@@ -2086,7 +2008,7 @@ MatData {
     "-T7VYA;64       X    8 0  !@    @    \"          4    (     0    $    !          4 !  -     0   \"<   !O;&1?;F%M90"
     "      :7-?9&5L971E9    &]B:F5C=%]B;&]C:P  #@   #@    &    \"     0         !0    @    !    !0    $         $     4"
     "   !(24PM,0    X    P    !@    @    ) @        4    (     0    $    !          (  0      #@   #@    &    \"     8 "
-    "        !0    @    !     0    $         \"0    @         \"(!H0 "
+    "        !0    @    !     0    $         \"0    @         \"N!H0 "
   }
   DataRecord {
     Tag			    DataTag0
@@ -2098,7 +2020,7 @@ MatData {
     "       .    N $   8    (     @         %    \"     $    !     0         %  0 $0    $   !5    :7-?=6YI<75E         "
     " !O;&1?8FQO8VL          &]L9%]N86UE            :7-?;6]D96Q?8VQO<VEN9P!I<U]D96QE=&5D              X    P    !@    @"
     "    ) @        4    (     0    $    !          (  0 !    #@   #@    &    \"     8         !0    @    !     0    $ "
-    "        \"0    @         \"(!H0 X    X    !@    @    $          4    (     0    4    !         !     %    2$E,+3$ "
+    "        \"0    @         \"N!H0 X    X    !@    @    $          4    (     0    4    !         !     %    2$E,+3$ "
     "   .    ,     8    (    \"0(        %    \"     $    !     0         \"  $       X    P    !@    @    ) @        4"
     "    (     0    $    !          (  0      #@   \" ?   &    \"     (         !0    @    !     0    $         !0 $  \\"
     "    !    '@   &]L9%]B;V%R9%]T>7!E '$X                    #@   #     &    \"     0         !0    @    !     @    $ "
